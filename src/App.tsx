@@ -1,21 +1,17 @@
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
-import { Box, Button, Flex, Link, Text, useColorMode } from '@chakra-ui/react'
-import './App.css'
-import Apresentation from './components/apresentation';
-import Header from './components/header';
+import { Box, useMediaQuery } from '@chakra-ui/react'
+import { Desktop } from './components/desktop';
+import { Mobile } from './components/mobile';
 
 function App() {
-
+  const [isMobile] = useMediaQuery("(max-width: 768px)")
   return (
-    <Flex
-      width='100vw'
-      height='100vh'
-      flexDirection='column'
-      padding='2%'
-    >
-      <Header />
-      <Apresentation />
-    </Flex>
+    <Box>
+    {isMobile ? (
+      <Mobile />
+    ) : (
+      <Desktop />
+    )}
+    </Box>
   )
 }
 
