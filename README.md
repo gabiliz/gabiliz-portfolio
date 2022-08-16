@@ -14,7 +14,10 @@ Now I have it! :)
 Every once in a while I will be updating it to add extra *pretty* stuff.
 
 ## Technologies
-I created this project using `Vite` as the building tool, `Chakra UI` as the component lib, `React` as the lib and `Typescript`.
+* Vite
+* Chakra UI
+* React
+* Typescript
 <p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=vite,react,typescript" />
