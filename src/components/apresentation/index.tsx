@@ -46,7 +46,7 @@ function Apresentation () {
         borderRadius='full'
         boxSize='300px'
         objectFit='cover'
-        src="https://i.imgur.com/DtilFz1.jpg?1" />
+        src="https://avatars.githubusercontent.com/u/54365855?v=4" />
     </Box>
   )
 }
