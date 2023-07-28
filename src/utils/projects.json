@@ -1,0 +1,17 @@
+[
+  {
+    "technologies" : [
+      "React",
+      "Typescript",
+      "Javascript",
+      "Next.js",
+      "TailwindCSS",
+      "Prisma",
+      "NeonDB"
+    ],
+    "name": "PeakNet",
+    "description": "Social Media project that was made following the Next.js 13 full course made by fireship.",
+    "imgUrl": "/assets/peaknet-screenshot.png",
+    "link": "https://github.com/gabiliz/social-media"
+  }
+]

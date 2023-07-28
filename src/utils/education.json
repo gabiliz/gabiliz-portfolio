@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Bachelor of Software Engineering",
+    "date": "2020 - 2023",
+    "institution": "Centro Universitário Católica de Santa Catarina",
+    "logo": "/assets/catolicasc.jpg"
+  },
+  {
+    "title": "Testing React with Jest and React Testing Library (RTL)",
+    "date": "Nov 2022",
+    "institution": "Udemy",
+    "logo": "/assets/udemy.png"
+  },
+  {
+    "title": "Hackathon Inova Católica - 3rd place",
+    "date": "Dec 2020",
+    "institution": "Centro Universitário Católica de Santa Catarina",
+    "logo": "/assets/catolicasc.jpg"
+  },
+  {
+    "title": "Certificate of Achievement - B2",
+    "date": "Aug 2019",
+    "institution": "University of Michigan",
+    "logo": "/assets/universityofmichigan.jpg"
+  },
+  {
+    "title": "Cambridge Young Learners Flyers",
+    "date": "Dec 2014",
+    "institution": "University of Cambridge",
+    "logo": "/assets/universityofcambridge.jpg"
+  },
+  {
+    "title": "Cambridge Young Learners Starters",
+    "date": "Dec 2011",
+    "institution": "University of Cambridge",
+    "logo": "/assets/universityofcambridge.jpg"
+  }
+]
