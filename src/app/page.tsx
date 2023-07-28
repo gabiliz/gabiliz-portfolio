@@ -9,7 +9,7 @@ export default function Home() {
               <p className="text-violet-600 dark:text-violet-400">Front-end Developer</p>
               <p className="ml-5 inline-flex gap-0.5 justify-center overflow-hidden text-sm font-medium transition rounded-lg py-1 px-3 bg-violet-400/10 text-violet-400 dark:ring-1 ring-inset ring-violet-400/20 hover:bg-violet-400/10 hover:text-violet-300 hover:ring-violet-300">#OpenToWork</p>
             </div>
-              <p className="text-zinc-600 dark:text-zinc-400 mb-24">I&apos;m a developer from <span className="text-violet-600 dark:text-violet-400">Brazil</span> who&apos;s experienced in building modern web applications. I currently work mostly with React, but I&apos;m always open to lean new technologies :)</p>
+              <p className="text-zinc-600 dark:text-zinc-400 mb-24">I&apos;m a developer from <span className="text-violet-600 dark:text-violet-400">Brazil</span> who&apos;s experienced in building modern web applications. I currently work mostly with React, but I&apos;m always open to learn new technologies :)</p>
           </div>
           <div className="lg:pr-32">
             <p className="text-zinc-600 dark:text-zinc-400 mb-8">Back in the end of 2019, I started a HTML course, because I was on vacation and wanted to learn something new, tumbling head first into the rabbit hole of coding.</p>
