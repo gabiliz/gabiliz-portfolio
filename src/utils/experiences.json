@@ -4,6 +4,22 @@
       "React",
       "Typescript",
       "Javascript",
+      "Vite",
+      "Styled Components",
+      "Jest",
+      "React Query",
+      "Angular",
+      "Syncfusion"
+    ],
+    "date": "Sept 2023 - Current",
+    "title": "Junior Front-end Developer · Martinelli Labs",
+    "description": "Developed for Suite Fiscal and Suite Auditor. Created new features, pages and fixed bugs."
+  },
+  {
+    "technologies" : [
+      "React",
+      "Typescript",
+      "Javascript",
       "Next.js",
       "Chakra UI",
       "Jest",

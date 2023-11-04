@@ -7,6 +7,22 @@
       "Next.js",
       "TailwindCSS",
       "Prisma",
+      "Supabase",
+      "tRPC"
+    ],
+    "name": "Pageturner",
+    "description": "Academic project to organize your readings.",
+    "imgUrl": "/assets/pageturner-screenshot.png",
+    "link": "https://github.com/gabiliz/pageturner"
+  },
+  {
+    "technologies" : [
+      "React",
+      "Typescript",
+      "Javascript",
+      "Next.js",
+      "TailwindCSS",
+      "Prisma",
       "NeonDB"
     ],
     "name": "PeakNet",
