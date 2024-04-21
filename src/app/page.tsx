@@ -7,7 +7,7 @@ export default function Home() {
             <h1 className="text-2xl font-bold">Gabriela Liz</h1>
             <div className="flex items-center mb-1">
               <p className="text-violet-600 dark:text-violet-400">Front-end Developer</p>
-              <p className="ml-5 inline-flex gap-0.5 justify-center overflow-hidden text-sm font-medium transition rounded-lg py-1 px-3 bg-violet-400/10 text-violet-400 dark:ring-1 ring-inset ring-violet-400/20 hover:bg-violet-400/10 hover:text-violet-300 hover:ring-violet-300">#OpenToWork</p>
+              {/* <p className="ml-5 inline-flex gap-0.5 justify-center overflow-hidden text-sm font-medium transition rounded-lg py-1 px-3 bg-violet-400/10 text-violet-400 dark:ring-1 ring-inset ring-violet-400/20 hover:bg-violet-400/10 hover:text-violet-300 hover:ring-violet-300">#OpenToWork</p> */}
             </div>
               <p className="text-zinc-600 dark:text-zinc-400 mb-24">I&apos;m a developer from <span className="text-violet-600 dark:text-violet-400">Brazil</span> who&apos;s experienced in building modern web applications. I currently work mostly with React, but I&apos;m always open to learn new technologies :)</p>
           </div>

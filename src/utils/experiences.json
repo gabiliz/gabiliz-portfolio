@@ -4,6 +4,24 @@
       "React",
       "Typescript",
       "Javascript",
+      "Next.js",
+      "Tailwind",
+      "Jest",
+      "React Testing Library",
+      "React Query",
+      "React Hook Form",
+      "Zustand",
+      "Radix UI"
+    ],
+    "date": "March 2024 - Current",
+    "title": "Front-end Developer · TWILA",
+    "description": "Developing for Cartão Simples. Created new features, pages, unit tests and fixed bugs."
+  },
+  {
+    "technologies" : [
+      "React",
+      "Typescript",
+      "Javascript",
       "Vite",
       "Styled Components",
       "Jest",
@@ -11,8 +29,8 @@
       "Angular",
       "Syncfusion"
     ],
-    "date": "Sept 2023 - Current",
-    "title": "Junior Front-end Developer · Martinelli Labs",
+    "date": "Sept 2023 - March 2024",
+    "title": "Front-end Developer · Martinelli Labs",
     "description": "Developed for Suite Fiscal and Suite Auditor. Created new features, pages and fixed bugs."
   },
   {
@@ -26,7 +44,7 @@
       "Formik"
     ],
     "date": "Oct 2022 - July 2023",
-    "title": "Junior Front-end Developer · Open Co",
+    "title": "Front-end Developer · Open Co",
     "description": "Developed for Geru and Rebel, both personal loan products. Created new features, pages, unit tests and fixed bugs."
   },
   {
@@ -41,7 +59,7 @@
       "RSpec"
     ],
     "date": "Feb 2022 - Aug 2023",
-    "title": "Junior Full-stack Developer · Dayway",
+    "title": "Full-stack Developer · Dayway",
     "description": "Developed for Dayway, a SaaS product, for their website and mobile app. Created new features, pages, unit tests, fixed bugs and studied for best performance of the product."
   },
   {
@@ -55,7 +73,7 @@
       "ASP.NET"
     ],
     "date": "May 2021 - Jan 2022",
-    "title": "Junior Full-stack Developer · bySeven IT",
+    "title": "Full-stack Developer · bySeven IT",
     "description": "Developed the new version of Seven Suite, applying Domain-Driven Design (DDD) and BEM methodology. Created new features, pages and fixed bugs."
   },
   {
