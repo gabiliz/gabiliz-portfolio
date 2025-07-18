@@ -1,3 +1,5 @@
+import { AsciiPlayer } from "@/components/AsciiPlayer";
+
 export default function Home() {
   return (
     <div className="relative flex h-full flex-col px-4 pt-14 sm:px-6 lg:px-8">
@@ -20,6 +22,7 @@ export default function Home() {
           </div>
         </article>
       </main>
+      <AsciiPlayer />
     </div>
   )
 }

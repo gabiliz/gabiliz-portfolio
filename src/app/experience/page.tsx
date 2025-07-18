@@ -10,7 +10,7 @@ export default function Experience() {
           <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Professional journey:</p>
           <ol className="relative border-l border-violet-200 dark:border-violet-700">
             {experiences.map((experience, index) => (
-            <ExperienceTimeline key={index} date={experience.date} title={experience.title} description={experience.description} technologies={experience.technologies} />
+            <ExperienceTimeline key={index} date={experience.date} title={experience.title} description={experience.description} technologies={experience.technologies} websites={experience.website} />
             ))}
           </ol>
         </article>

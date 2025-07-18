@@ -15,7 +15,12 @@
     ],
     "date": "March 2024 - Current",
     "title": "Front-end Developer · TWILA",
-    "description": "Developing for Cartão Simples. Created new features, pages, unit tests and fixed bugs."
+    "description": "Developing for Cartão Simples. Created new features, pages, unit tests and fixed bugs.",
+    "website": [
+      "https://www.cartaosimples.com.br",
+      "https://www.credicarro.com.br",
+      "https://www.moneyjus.com.br"
+    ]
   },
   {
     "technologies" : [
@@ -31,7 +36,10 @@
     ],
     "date": "Sept 2023 - March 2024",
     "title": "Front-end Developer · Martinelli Labs",
-    "description": "Developed for Suite Fiscal and Suite Auditor. Created new features, pages and fixed bugs."
+    "description": "Developed for Suite Fiscal and Suite Auditor. Created new features, pages and fixed bugs.",
+    "website": [
+      "https://www.martinellilabs.com.br"
+    ]
   },
   {
     "technologies" : [
@@ -45,7 +53,11 @@
     ],
     "date": "Oct 2022 - July 2023",
     "title": "Front-end Developer · Open Co",
-    "description": "Developed for Geru and Rebel, both personal loan products. Created new features, pages, unit tests and fixed bugs."
+    "description": "Developed for Geru and Rebel, both personal loan products. Created new features, pages, unit tests and fixed bugs.",
+    "website": [
+      "https://www.open-co.com",
+      "https://www.geru.com.br"
+    ]
   },
   {
     "technologies" : [
@@ -60,7 +72,10 @@
     ],
     "date": "Feb 2022 - Aug 2023",
     "title": "Full-stack Developer · Dayway",
-    "description": "Developed for Dayway, a SaaS product, for their website and mobile app. Created new features, pages, unit tests, fixed bugs and studied for best performance of the product."
+    "description": "Developed for Dayway, a SaaS product, for their website and mobile app. Created new features, pages, unit tests, fixed bugs and studied for best performance of the product.",
+    "website": [
+      "https://actiosoftware.com/dayway-checklist-digital"
+    ]
   },
   {
     "technologies" : [
@@ -74,7 +89,10 @@
     ],
     "date": "May 2021 - Jan 2022",
     "title": "Full-stack Developer · bySeven IT",
-    "description": "Developed the new version of Seven Suite, applying Domain-Driven Design (DDD) and BEM methodology. Created new features, pages and fixed bugs."
+    "description": "Developed the new version of Seven Suite, applying Domain-Driven Design (DDD) and BEM methodology. Created new features, pages and fixed bugs.",
+    "website": [
+      "https://www.byseven.com.br"
+    ]
   },
   {
     "technologies" : [
@@ -87,6 +105,9 @@
     ],
     "date": "Nov 2020 - May 2021",
     "title": "Full-stack Developer Intern · Grupo Euax",
-    "description": "Started as support analyst for all the products and a couple months later migrated to develop for Fleeg. Created new features, pages, unit tests and fixed bugs."
+    "description": "Started as support analyst for all the products and a couple months later migrated to develop for Fleeg. Created new features, pages, unit tests and fixed bugs.",
+    "website": [
+      "https://www.euax.com.br"
+    ]
   }
 ]

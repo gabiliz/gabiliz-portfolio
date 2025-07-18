@@ -10,10 +10,23 @@
       "Supabase",
       "tRPC"
     ],
-    "name": "Pageturner",
-    "description": "Academic project to organize your readings.",
-    "imgUrl": "/assets/pageturner-screenshot.png",
-    "link": "https://github.com/gabiliz/pageturner"
+    "name": "brev.ly",
+    "description": "Academic project focused on building a URL shortener.",
+    "imgUrl": "/assets/brevly.png",
+    "link": "https://github.com/gabiliz/brevly"
+  },
+  {
+    "technologies" : [
+      "React",
+      "Typescript",
+      "Javascript",
+      "Next.js",
+      "TailwindCSS"
+    ],
+    "name": "Doebem",
+    "description": "Volunteer work for a non-governmental organization",
+    "imgUrl": "/assets/doebem-screenshot.png",
+    "link": "https://www.doebem.org.br/"
   },
   {
     "technologies" : [
@@ -23,11 +36,12 @@
       "Next.js",
       "TailwindCSS",
       "Prisma",
-      "NeonDB"
+      "Supabase",
+      "tRPC"
     ],
-    "name": "PeakNet",
-    "description": "Social Media project that was made following the Next.js 13 full course made by fireship.",
-    "imgUrl": "/assets/peaknet-screenshot.png",
-    "link": "https://github.com/gabiliz/social-media"
+    "name": "Pageturner",
+    "description": "Academic project for managing and organizing your readings.",
+    "imgUrl": "/assets/pageturner-screenshot.png",
+    "link": "https://github.com/gabiliz/pageturner"
   }
 ]
