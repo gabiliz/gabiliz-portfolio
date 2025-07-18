@@ -19,9 +19,9 @@ export default function ExperienceTimeline({ date, title, description, technolog
       <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{title}</h3>
       <p className="text-base font-normal text-gray-500 dark:text-gray-400">{description}</p>
       <ul>
-        <li className="mt-2">
+        <li className="mt-2 flex flex-wrap">
           {websites?.map((website, index) => (
-            <a key={index} target="_blank" rel="noopener noreferrer" className="text-sm font-medium pr-4 cursor-pointer underline text-violet-900 dark:text-gray-300 dark:hover:text-gray-500" href={website}>
+            <a key={index} target="_blank" rel="noopener noreferrer" className="text-sm py-2 font-medium pr-4 cursor-pointer underline text-violet-900 dark:text-gray-300 dark:hover:text-gray-500" href={website}>
               {handleFormatUrl(website)}
             </a>
           ))}
