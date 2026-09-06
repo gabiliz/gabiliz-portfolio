@@ -1,0 +1,60 @@
+{
+  "_note": "Bloco 'Now' da home (items) e a rota /now (entries). A linha 'reading' de /now é derivada de reading.json — não duplicar aqui.",
+  "updatedAt": "2026-09-05",
+  "entries": {
+    "work": {
+      "en": "I lead the frontend at Twila, looking after the design system, Auth0 and card payments.",
+      "pt": "Lidero o frontend na Twila, cuidando do design system, do Auth0 e do pagamento por cartão."
+    },
+    "learning": {
+      "en": "Back-end with Node and Postgres, so I can work full-stack.",
+      "pt": "Back-end com Node e Postgres, para poder atuar como full-stack."
+    },
+    "finished": {
+      "en": "My Tech Development 360 postgrad at FTR.",
+      "pt": "A pós em Tech Development 360 na FTR."
+    },
+    "life": {
+      "en": "Walking my dog and watching Masterchef with my mom.",
+      "pt": "Passeando com o meu cachorro e assistindo Masterchef com a minha mãe."
+    },
+    "wanting": {
+      "en": "Getting deeper into back-end, system design, AWS and DevOps so I can work full-stack.",
+      "pt": "Me aprofundar em back-end, system design, AWS e DevOps para trabalhar como full-stack."
+    }
+  },
+  "items": [
+    {
+      "en": "Wrapped up my Tech Development 360 postgrad at FTR.",
+      "pt": "Concluí a pós em Tech Development 360 na FTR."
+    },
+    {
+      "en": "Studying back-end so I can work full-stack, not just front-end.",
+      "pt": "Estudando back-end para atuar também como full-stack, não só front-end."
+    },
+    {
+      "en": "Walking my dog and watching Masterchef with my mom.",
+      "pt": "Passeando com o meu cachorro e assistindo Masterchef com a minha mãe."
+    }
+  ],
+  "availability": {
+    "badge": {
+      "en": "front-end at Twila",
+      "pt": "front-end na Twila"
+    },
+    "statement": {
+      "en": "Always open to a conversation, whether it is about front-end, back-end or whatever you are building. Send me a message and I will get back to you within a day.",
+      "pt": "Sempre aberta a conversar, seja sobre front-end, back-end ou o que você estiver construindo. Me manda mensagem que eu respondo em até 24h."
+    },
+    "facts": [
+      {
+        "en": "Joinville, Brazil — GMT-3, remote, overlapping hours with Europe and the US",
+        "pt": "Joinville, Brasil — GMT-3, remoto, com sobreposição de horário com Europa e EUA"
+      },
+      {
+        "en": "Native Portuguese, English B2 (MET, Michigan)",
+        "pt": "Português nativo, inglês B2 (MET, Michigan)"
+      }
+    ]
+  }
+}

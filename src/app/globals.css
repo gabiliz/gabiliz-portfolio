@@ -1,5 +1,195 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-ink: #0a0a0c;
+
+  --color-surface-2: #0d0d10;
+  --color-surface: #111114;
+
+  --color-bone: #eeeae2;
+
+  --color-amber: oklch(0.78 0.16 85);
+  --color-amber-soft: oklch(0.78 0.16 85 / 0.08);
+
+  --color-line: rgba(238, 234, 226, 0.12);
+  --color-line-subtle: rgba(238, 234, 226, 0.1);
+  --color-line-strong: rgba(238, 234, 226, 0.22);
+
+  --font-display: var(--font-bricolage), sans-serif;
+  --font-sans: var(--font-plex-sans), sans-serif;
+  --font-mono: var(--font-dm-mono), monospace;
+
+  --radius-card: 14px;
+  --radius-panel: 16px;
+
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(
+    from 180deg at 50% 50%,
+    var(--tw-gradient-stops)
+  );
+
+  --animate-fadeUp: fadeUp 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-pulseRing: pulseRing 2.4s ease-out infinite;
+  --animate-floaty: floaty 7s ease-in-out infinite;
+  --animate-marquee: marquee 22s linear infinite;
+  --animate-barFill: barFill 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) 0.3s both;
+  --animate-pawStep: pawStep 2.4s ease-in-out infinite;
+  --animate-steam: steam 2.6s ease-out infinite;
+  --animate-breathe: breathe 2.6s ease-in-out infinite;
+  --animate-lift: lift 2.8s ease-in-out infinite;
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes pulseRing {
+    0% {
+      box-shadow: 0 0 0 0 oklch(0.78 0.16 85 / 0.55);
+    }
+    70% {
+      box-shadow: 0 0 0 14px oklch(0.78 0.16 85 / 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 oklch(0.78 0.16 85 / 0);
+    }
+  }
+  @keyframes floaty {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-14px);
+    }
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes barFill {
+    from {
+      transform: scaleX(0);
+    }
+  }
+  @keyframes pawStep {
+    0%,
+    100% {
+      opacity: 0.2;
+    }
+    40% {
+      opacity: 1;
+    }
+  }
+  @keyframes steam {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    30% {
+      opacity: 0.85;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-16px);
+    }
+  }
+  @keyframes breathe {
+    0%,
+    100% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(0.72);
+    }
+  }
+  @keyframes lift {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-7px);
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility tap-area {
+  /* Expands a small inline link's hit area to ~44px without moving anything.
+     Touch widths only: on a pointer device the overlay would sit on top of the
+     surrounding text and steal its hovers. */
+  @media (max-width: 1023px) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: -17px -12px;
+    }
+  }
+}
+
+@layer base {
+  :root {
+    --font-bricolage: "Bricolage Grotesque";
+  }
+
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+
+  /* anchored sections stop clear of the header */
+  section[id] {
+    scroll-margin-top: 24px;
+  }
+
+  body {
+    @apply bg-ink text-bone;
+  }
+
+  /* pre-hydration fallback: the accordion effect takes over on mount */
+  [data-accordion="closed"] {
+    max-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
