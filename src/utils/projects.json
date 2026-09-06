@@ -1,47 +1,283 @@
-[
-  {
-    "technologies" : [
-      "React",
-      "Typescript",
-      "Javascript",
-      "Next.js",
-      "TailwindCSS",
-      "Prisma",
-      "Supabase",
-      "tRPC"
-    ],
-    "name": "brev.ly",
-    "description": "Academic project focused on building a URL shortener.",
-    "imgUrl": "/assets/brevly.png",
-    "link": "https://github.com/gabiliz/brevly"
-  },
-  {
-    "technologies" : [
-      "React",
-      "Typescript",
-      "Javascript",
-      "Next.js",
-      "TailwindCSS"
-    ],
-    "name": "Doebem",
-    "description": "Volunteer work for a non-governmental organization",
-    "imgUrl": "/assets/doebem-screenshot.png",
-    "link": "https://www.doebem.org.br/"
-  },
-  {
-    "technologies" : [
-      "React",
-      "Typescript",
-      "Javascript",
-      "Next.js",
-      "TailwindCSS",
-      "Prisma",
-      "Supabase",
-      "tRPC"
-    ],
-    "name": "Pageturner",
-    "description": "Academic project for managing and organizing your readings.",
-    "imgUrl": "/assets/pageturner-screenshot.png",
-    "link": "https://github.com/gabiliz/pageturner"
-  }
-]
+{
+  "_note": "Para republicar o case do brev.ly: renomeie \"caseStudyDraft\" de volta para \"caseStudy\", devolva \"case\" ao stack dele, recoloque o filtro {\"key\":\"case\",\"label\":\"Case study\"} e volte a tag para \"case study\".",
+  "projects": [
+    {
+      "id": "brevly",
+      "name": "brev.ly",
+      "year": "2025",
+      "tag": {
+        "en": "academic",
+        "pt": "acadêmico"
+      },
+      "featured": true,
+      "stack": ["react", "next", "typescript", "trpc", "tailwind"],
+      "technologies": ["Next.js", "TypeScript", "tRPC", "Prisma", "Supabase", "Tailwind"],
+      "image": "/assets/brevly.png",
+      "link": "https://github.com/gabiliz/brevly",
+      "deploy": null,
+      "description": {
+        "en": "URL shortener with a metrics dashboard. Optimistic cache so click counters never make the table flicker.",
+        "pt": "Encurtador de URL com painel de métricas. Cache otimista para os contadores não fazerem a tabela piscar."
+      },
+      "caseStudyDraft": {
+        "meta": {
+          "context": {
+            "en": "Academic project · FTR postgrad · 2025",
+            "pt": "Projeto acadêmico · pós FTR · 2025"
+          },
+          "role": {
+            "en": "Design + front-end + back-end (solo)",
+            "pt": "Design + front-end + back-end (solo)"
+          },
+          "timeline": {
+            "en": "4 weeks",
+            "pt": "4 semanas"
+          }
+        },
+        "thesis": {
+          "en": "A URL shortener where the hard part isn't shortening links — it's the dashboard: click counts arriving constantly, without letting the interface stutter.",
+          "pt": "Um encurtador de URL onde a parte difícil não é encurtar link — é o painel: contagem de cliques chegando o tempo todo, sem deixar a interface travar."
+        },
+        "problem": [
+          {
+            "en": "Shortening a URL is trivial. What breaks is the list: every link has a click counter that keeps changing, and the naive version refetched the whole query on every event — the table flickered and scrolling stuttered.",
+            "pt": "Encurtar URL é trivial. O que quebra é a lista: cada link tem contador de cliques que muda, e a versão ingênua refazia a query inteira a cada evento — a tabela piscava e a rolagem engasgava."
+          },
+          {
+            "en": "It also had to validate slugs in real time without turning every keystroke into a database round trip.",
+            "pt": "Também precisava validar slug em tempo real sem transformar cada tecla em uma requisição ao banco."
+          }
+        ],
+        "constraints": [
+          {
+            "en": "One person, 4 weeks, fixed academic deadline.",
+            "pt": "Uma pessoa, 4 semanas, prazo acadêmico fixo."
+          },
+          {
+            "en": "Supabase free tier: counting a click couldn't cost one write per request.",
+            "pt": "Tier grátis do Supabase: contar clique não podia custar uma escrita por request."
+          },
+          {
+            "en": "Shared types between client and server without hand-maintaining two contracts.",
+            "pt": "Tipos compartilhados entre front e back sem manter dois contratos na mão."
+          },
+          {
+            "en": "The redirect has to be fast — it's the only thing the end user ever sees.",
+            "pt": "Redirect tem que ser rápido: é a única coisa que o usuário final vê."
+          }
+        ],
+        "decisions": [
+          {
+            "title": {
+              "en": "tRPC over REST",
+              "pt": "tRPC em vez de REST"
+            },
+            "body": {
+              "en": "One contract, typed end to end. Renaming a schema field breaks the build — not production.",
+              "pt": "Um contrato só, tipado ponta a ponta. Renomear um campo no schema quebra o build — não a produção."
+            }
+          },
+          {
+            "title": {
+              "en": "Optimistic list cache",
+              "pt": "Cache otimista na lista"
+            },
+            "body": {
+              "en": "Creating a link updates the cache immediately and reconciles after. No more flicker — the table stops refetching everything.",
+              "pt": "Criar link atualiza o cache na hora e reconcilia depois. Fim do piscar: a tabela não refaz a query inteira."
+            }
+          },
+          {
+            "title": {
+              "en": "Slug: debounce + unique index",
+              "pt": "Slug: debounce + índice único"
+            },
+            "body": {
+              "en": "Debounced check while typing for UX, a DB constraint as the source of truth. The client is never the only line of defense.",
+              "pt": "Checagem com debounce na digitação para UX, constraint no banco como verdade. O front nunca é a única defesa."
+            }
+          }
+        ],
+        "redirectFlow": [
+          {
+            "label": "/abc123",
+            "highlight": false
+          },
+          {
+            "label": {
+              "en": "edge handler",
+              "pt": "edge handler"
+            },
+            "highlight": false
+          },
+          {
+            "label": {
+              "en": "lookup + 301",
+              "pt": "lookup + 301"
+            },
+            "highlight": true
+          },
+          {
+            "label": {
+              "en": "destination",
+              "pt": "destino"
+            },
+            "highlight": false
+          },
+          {
+            "label": {
+              "en": "click queued, written in batches",
+              "pt": "clique enfileirado, gravado em lote"
+            },
+            "dashed": true
+          }
+        ],
+        "outcome": [
+          {
+            "value": null,
+            "placeholder": "[num]",
+            "label": {
+              "en": "redirect ms (p95) — measure & fill",
+              "pt": "ms de redirect (p95) — medir e preencher"
+            }
+          },
+          {
+            "value": null,
+            "placeholder": "[num]",
+            "label": {
+              "en": "Lighthouse score",
+              "pt": "score do Lighthouse"
+            }
+          },
+          {
+            "value": null,
+            "placeholder": "[num]%",
+            "label": {
+              "en": "test coverage",
+              "pt": "cobertura de testes"
+            }
+          }
+        ],
+        "retrospective": [
+          {
+            "en": "Write the redirect integration tests before the UI, not after.",
+            "pt": "Escrever os testes de integração do redirect antes da UI, não depois."
+          },
+          {
+            "en": "Instrument metrics from day one — I lost my before/after data.",
+            "pt": "Instrumentar métrica desde o dia um — perdi dados de comparação."
+          },
+          {
+            "en": "Split the DB schema from the validation schema earlier.",
+            "pt": "Separar o schema do banco do schema de validação mais cedo."
+          }
+        ]
+      }
+    },
+    {
+      "id": "doebem",
+      "name": "Doebem",
+      "year": "2024",
+      "tag": {
+        "en": "live · volunteer",
+        "pt": "no ar · voluntário"
+      },
+      "featured": true,
+      "stack": ["react", "next", "typescript", "tailwind"],
+      "technologies": ["React", "Next.js", "TypeScript", "Chakra UI", "Tailwind"],
+      "image": "/assets/doebem-screenshot.png",
+      "link": "https://www.doebem.org.br/",
+      "description": {
+        "en": "Volunteer front-end for a Brazilian donation NGO. Responsiveness and multimedia components, live with real traffic.",
+        "pt": "Front-end voluntário para uma ONG brasileira de doações. Responsividade e componentes multimídia, no ar com tráfego real."
+      }
+    },
+    {
+      "id": "pageturner",
+      "name": "Pageturner",
+      "year": "2025",
+      "tag": {
+        "en": "academic",
+        "pt": "acadêmico"
+      },
+      "featured": false,
+      "stack": ["react", "next", "typescript", "trpc"],
+      "technologies": ["Next.js", "TypeScript", "tRPC", "Prisma", "Supabase"],
+      "image": "/assets/pageturner-screenshot.png",
+      "link": "https://github.com/gabiliz/pageturner",
+      "description": {
+        "en": "Reading organizer: shelves, progress and history, with a typed end-to-end API.",
+        "pt": "Organizador de leituras: estantes, progresso e histórico, com API tipada ponta a ponta."
+      }
+    },
+    {
+      "id": "financy",
+      "name": "Financy",
+      "year": "2026",
+      "tag": {
+        "en": "academic",
+        "pt": "acadêmico"
+      },
+      "featured": true,
+      "stack": ["react", "typescript", "node", "graphql", "tailwind"],
+      "technologies": ["React", "TypeScript", "Node.js", "GraphQL", "Prisma", "Tailwind"],
+      "image": "/assets/financy.png",
+      "link": "https://github.com/gabiliz/financy",
+      "deploy": null,
+      "description": {
+        "en": "Personal finance manager: income, expenses and categories in a dashboard, with a GraphQL API and JWT auth.",
+        "pt": "Gerenciador de finanças pessoais: receitas, despesas e categorias num dashboard, com API GraphQL e autenticação JWT."
+      }
+    }
+  ],
+  "filters": [
+    {
+      "key": "all",
+      "label": "All"
+    },
+    {
+      "key": "react",
+      "label": "React"
+    },
+    {
+      "key": "next",
+      "label": "Next.js"
+    },
+    {
+      "key": "typescript",
+      "label": "TypeScript"
+    },
+    {
+      "key": "native",
+      "label": "React Native"
+    },
+    {
+      "key": "node",
+      "label": "Node"
+    },
+    {
+      "key": "rails",
+      "label": "Rails"
+    },
+    {
+      "key": "postgres",
+      "label": "Postgres"
+    },
+    {
+      "key": "trpc",
+      "label": "tRPC"
+    },
+    {
+      "key": "graphql",
+      "label": "GraphQL"
+    },
+    {
+      "key": "testing",
+      "label": "Testing"
+    },
+    {
+      "key": "ds",
+      "label": "Design Systems"
+    }
+  ]
+}
