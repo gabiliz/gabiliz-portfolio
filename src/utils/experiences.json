@@ -1,113 +1,302 @@
-[
-  {
-    "technologies" : [
-      "React",
-      "Typescript",
-      "Javascript",
-      "Next.js",
-      "Tailwind",
-      "Jest",
-      "React Testing Library",
-      "React Query",
-      "React Hook Form",
-      "Zustand",
-      "Radix UI"
-    ],
-    "date": "March 2024 - Current",
-    "title": "Front-end Developer · TWILA",
-    "description": "Developing for Cartão Simples. Created new features, pages, unit tests and fixed bugs.",
-    "website": [
-      "https://www.cartaosimples.com.br",
-      "https://www.credicarro.com.br",
-      "https://www.moneyjus.com.br"
-    ]
-  },
-  {
-    "technologies" : [
-      "React",
-      "Typescript",
-      "Javascript",
-      "Vite",
-      "Styled Components",
-      "Jest",
-      "React Query",
-      "Angular",
-      "Syncfusion"
-    ],
-    "date": "Sept 2023 - March 2024",
-    "title": "Front-end Developer · Martinelli Labs",
-    "description": "Developed for Suite Fiscal and Suite Auditor. Created new features, pages and fixed bugs.",
-    "website": [
-      "https://www.martinellilabs.com.br"
-    ]
-  },
-  {
-    "technologies" : [
-      "React",
-      "Typescript",
-      "Javascript",
-      "Next.js",
-      "Chakra UI",
-      "Jest",
-      "Formik"
-    ],
-    "date": "Oct 2022 - July 2023",
-    "title": "Front-end Developer · Open Co",
-    "description": "Developed for Geru and Rebel, both personal loan products. Created new features, pages, unit tests and fixed bugs.",
-    "website": [
-      "https://www.open-co.com",
-      "https://www.geru.com.br"
-    ]
-  },
-  {
-    "technologies" : [
-      "React",
-      "React Native",
-      "Ruby on Rails",
-      "Typescript",
-      "Javascript",
-      "Material UI",
-      "Redux",
-      "RSpec"
-    ],
-    "date": "Feb 2022 - Aug 2023",
-    "title": "Full-stack Developer · Dayway",
-    "description": "Developed for Dayway, a SaaS product, for their website and mobile app. Created new features, pages, unit tests, fixed bugs and studied for best performance of the product.",
-    "website": [
-      "https://actiosoftware.com/dayway-checklist-digital"
-    ]
-  },
-  {
-    "technologies" : [
-      "C#",
-      "HTML",
-      "CSS",
-      "Sass",
-      "Javascript",
-      "jQuery",
-      "ASP.NET"
-    ],
-    "date": "May 2021 - Jan 2022",
-    "title": "Full-stack Developer · bySeven IT",
-    "description": "Developed the new version of Seven Suite, applying Domain-Driven Design (DDD) and BEM methodology. Created new features, pages and fixed bugs.",
-    "website": [
-      "https://www.byseven.com.br"
-    ]
-  },
-  {
-    "technologies" : [
-      "Ruby on Rails",
-      "HTML",
-      "CSS",
-      "Javascript",
-      "jQuery",
-      "RSpec"
-    ],
-    "date": "Nov 2020 - May 2021",
-    "title": "Full-stack Developer Intern · Grupo Euax",
-    "description": "Started as support analyst for all the products and a couple months later migrated to develop for Fleeg. Created new features, pages, unit tests and fixed bugs.",
-    "website": [
-      "https://www.euax.com.br"
-    ]
-  }
-]
+{
+  "_note": "Conteúdo final, extraído do currículo atualizado (2026). Substitui src/utils/experiences.json.",
+  "roles": [
+    {
+      "id": "twila",
+      "company": "TWILA",
+      "current": true,
+      "date": {
+        "en": "2024 — now",
+        "pt": "2024 — atual"
+      },
+      "range": {
+        "start": "2024-03",
+        "end": null
+      },
+      "title": {
+        "en": "Front-end Developer · Frontend Tech Lead",
+        "pt": "Desenvolvedora Front-end · Liderança Técnica de Frontend"
+      },
+      "stack": ["react", "next", "typescript", "testing", "ds"],
+      "technologies": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind",
+        "Style Dictionary",
+        "Storybook",
+        "Playwright",
+        "Vitest",
+        "React Testing Library",
+        "Auth0"
+      ],
+      "bullets": [
+        {
+          "en": "Technically lead the frontend team (React, Next.js, TypeScript): define architecture decisions, conduct PR reviews, and take part in meetings with clients and integrated service providers.",
+          "pt": "Lidero tecnicamente a equipe de frontend (React, Next.js, TypeScript): defino decisões de arquitetura, conduzo revisões de PR e participo de reuniões com clientes e fornecedores de serviços integrados."
+        },
+        {
+          "en": "Own the implementation of strategic features and critical external integrations with React/Next.js: identity validation, authentication (Auth0), credit card payment processing, and document upload to S3.",
+          "pt": "Principal responsável pela implementação de features estratégicas e integrações externas críticas com React/Next.js: validação de identidade, autenticação (Auth0), pagamento via cartão de crédito e upload de documentos para S3."
+        },
+        {
+          "en": "Architected the design system shared between Credicarro and Parcele Mais (React, Style Dictionary, Tailwind, Storybook), eliminating inconsistencies that affected 45% of components and achieving 100% visual standardization across products.",
+          "pt": "Arquitetei o design system compartilhado entre Credicarro e Parcele Mais (React, Style Dictionary, Tailwind, Storybook), eliminando inconsistências que afetavam 45% dos componentes e alcançando 100% de padronização visual entre produtos."
+        },
+        {
+          "en": "Implemented E2E (Playwright) and unit tests (Vitest + React Testing Library) in CI, raising test coverage from 0% to 25% (targeting 70%), increasing the reliability of the deployment pipeline.",
+          "pt": "Implementei testes E2E (Playwright) e unitários (Vitest + React Testing Library) em CI, elevando a cobertura de testes de 0% para 25% (meta de 70%), aumentando a segurança do pipeline de deploy."
+        }
+      ]
+    },
+    {
+      "id": "martinelli",
+      "company": "Martinelli Labs",
+      "current": false,
+      "date": {
+        "en": "2023 — 2024",
+        "pt": "2023 — 2024"
+      },
+      "range": {
+        "start": "2023-09",
+        "end": "2024-03"
+      },
+      "title": {
+        "en": "Front-end Developer",
+        "pt": "Desenvolvedora Front-end"
+      },
+      "stack": ["angular", "react", "typescript"],
+      "technologies": ["Angular", "React", "TypeScript", "Vite", "Styled Components", "Syncfusion"],
+      "bullets": [
+        {
+          "en": "Resumed development of Suite Fiscal (Angular, TypeScript), a product with stalled progress, resolving long-standing issues and improving the visualization of SQL-driven query modules.",
+          "pt": "Retomei o desenvolvimento do Suite Fiscal (Angular, TypeScript), um produto com progresso estagnado, resolvendo problemas persistentes de longa data e melhorando a visualização de módulos de consulta SQL."
+        },
+        {
+          "en": "Fixed forms and registration modules that were causing slow load times and incorrect data submission, across Suite Auditor (React) and Suite Fiscal (Angular).",
+          "pt": "Corrigi formulários e módulos de cadastro que apresentavam lentidão e envio de dados incorretos ao sistema, no Suite Auditor (React) e Suite Fiscal (Angular)."
+        },
+        {
+          "en": "Collaborated with the back-end team on building new modules, integrating new API endpoints with React Query and TypeScript.",
+          "pt": "Atuei em conjunto com a equipe de back-end na criação de novos módulos, integrando novos endpoints de API com React Query e TypeScript."
+        }
+      ]
+    },
+    {
+      "id": "yoobe",
+      "company": "Yoobe",
+      "current": false,
+      "date": {
+        "en": "2023",
+        "pt": "2023"
+      },
+      "range": {
+        "start": "2023-05",
+        "end": "2023-08"
+      },
+      "title": {
+        "en": "Front-end Freelance",
+        "pt": "Front-end Freelance"
+      },
+      "stack": ["react", "next", "typescript"],
+      "technologies": ["React", "Next.js", "TypeScript", "Next Commerce", "Spree"],
+      "bullets": [
+        {
+          "en": "Developed Yoobe Plataforma and Yoobe Commerce using React, Next.js (Next Commerce + Spree provider), TypeScript/JavaScript, and Formik/Material UI for forms and components.",
+          "pt": "Desenvolvi o Yoobe Plataforma e Yoobe Commerce com React, Next.js (Next Commerce + provider Spree), TypeScript/JavaScript e Formik/Material UI para formulários e componentes."
+        },
+        {
+          "en": "Refactored 60% of Yoobe Plataforma, improving performance and making it easier to add new features.",
+          "pt": "Refatorei 60% do Yoobe Plataforma, melhorando performance e facilitando a adição de novas features."
+        },
+        {
+          "en": "Implemented accessibility improvements, enabling clients with visual impairments to use the platform.",
+          "pt": "Implementei melhorias de acessibilidade, viabilizando o uso da plataforma por clientes com deficiência visual."
+        }
+      ]
+    },
+    {
+      "id": "openco",
+      "company": "Open Co",
+      "current": false,
+      "date": {
+        "en": "2022 — 2023",
+        "pt": "2022 — 2023"
+      },
+      "range": {
+        "start": "2022-10",
+        "end": "2023-07"
+      },
+      "title": {
+        "en": "Front-end Developer",
+        "pt": "Desenvolvedora Front-end"
+      },
+      "stack": ["react", "next", "typescript", "testing"],
+      "technologies": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Chakra UI",
+        "Jest",
+        "Formik",
+        "Storybook"
+      ],
+      "bullets": [
+        {
+          "en": "Developed interfaces for Geru, a personal loan product, using React, Next.js, TypeScript, Chakra UI, and Formik, within a modular and scalable microfrontend architecture.",
+          "pt": "Desenvolvi interfaces para o produto de empréstimo pessoal Geru com React, Next.js, TypeScript, Chakra UI e Formik, em arquitetura microfrontend modular e escalável."
+        },
+        {
+          "en": "Optimized site performance, accessibility, and SEO, reaching 90 points on Lighthouse.",
+          "pt": "Otimizei performance, acessibilidade e SEO do site, atingindo 90 pontos no Lighthouse."
+        },
+        {
+          "en": "Implemented unit tests with Jest and React Testing Library, raising test coverage to 70%.",
+          "pt": "Implementei testes unitários com Jest e React Testing Library, elevando a cobertura de testes para 70%."
+        },
+        {
+          "en": "Documented reusable components in Storybook and integrated feature flag control via GitLab.",
+          "pt": "Documentei componentes reutilizáveis no Storybook e integrei controle de funcionalidades via feature flags do GitLab."
+        }
+      ]
+    },
+    {
+      "id": "dayway",
+      "company": "Dayway",
+      "current": false,
+      "date": {
+        "en": "2022",
+        "pt": "2022"
+      },
+      "range": {
+        "start": "2022-02",
+        "end": "2022-08"
+      },
+      "title": {
+        "en": "Full-stack Developer",
+        "pt": "Desenvolvedora Full-stack"
+      },
+      "stack": ["react", "native", "rails"],
+      "technologies": [
+        "React",
+        "React Native",
+        "Ruby on Rails",
+        "TypeScript",
+        "Material UI",
+        "Redux",
+        "MongoDB",
+        "RSpec"
+      ],
+      "bullets": [
+        {
+          "en": "Contributed to phasing out a legacy system with a high incidence of bugs, migrating functionality to 100% adoption of the new platform (React.js) and eliminating inconsistencies inherited from the old codebase.",
+          "pt": "Contribuí para a descontinuação de um sistema legado com alta incidência de bugs, migrando funcionalidades para 100% de uso da nova plataforma (React.js) e eliminando inconsistências herdadas do código antigo."
+        },
+        {
+          "en": "Diagnosed and fixed a critical connectivity bug between the React Native app and MongoDB, restoring app stability in production.",
+          "pt": "Diagnostiquei e corrigi um bug crítico de conexão entre o app React Native e o MongoDB, restaurando a estabilidade do aplicativo em produção."
+        },
+        {
+          "en": "Developed full-stack features with Ruby on Rails, React.js, and React Native, using Redux, MongoDB Realm, MySQL, AWS, Azure, and Docker.",
+          "pt": "Desenvolvi features full-stack com Ruby on Rails, React.js e React Native, utilizando Redux, MongoDB Realm, MySQL, AWS, Azure e Docker."
+        }
+      ]
+    },
+    {
+      "id": "byseven",
+      "company": "bySeven IT",
+      "current": false,
+      "date": {
+        "en": "2021 — 2022",
+        "pt": "2021 — 2022"
+      },
+      "range": {
+        "start": "2021-05",
+        "end": "2022-01"
+      },
+      "title": {
+        "en": "Full-stack Developer",
+        "pt": "Desenvolvedora Full-stack"
+      },
+      "stack": ["dotnet", "ds"],
+      "technologies": [".NET", "ASP.NET", "C#", "JavaScript", "jQuery", "Sass"],
+      "bullets": [
+        {
+          "en": "Built full-stack modules (.NET + ASP.NET on the back-end, JavaScript/jQuery on the front-end) for the new Seven Suite, including reporting, ticket management, time tracking, and statements, from the database through to the final UI.",
+          "pt": "Desenvolvi módulos full-stack (.NET + ASP.NET no back-end, JavaScript/jQuery no front-end) para o novo Seven Suite, incluindo relatórios, abertura de chamados, controle de horas e extratos, do banco de dados à interface final."
+        },
+        {
+          "en": "Applied a design system with SCSS to standardize the project’s visual identity, increasing consistency across modules built from scratch.",
+          "pt": "Apliquei um design system com SCSS para padronizar a identidade visual do projeto, aumentando a consistência entre os módulos criados do zero."
+        }
+      ]
+    },
+    {
+      "id": "euax",
+      "company": "Euax",
+      "current": false,
+      "date": {
+        "en": "2020 — 2021",
+        "pt": "2020 — 2021"
+      },
+      "range": {
+        "start": "2020-11",
+        "end": "2021-05"
+      },
+      "title": {
+        "en": "Full-stack Intern",
+        "pt": "Estágio Full-stack"
+      },
+      "stack": ["rails", "testing"],
+      "technologies": ["Ruby on Rails", "JavaScript", "jQuery", "RSpec"],
+      "bullets": [
+        {
+          "en": "Developed back-end functionality with Ruby on Rails for the Fleeg product, with automated testing in RSpec, plus occasional front-end support with HTML, CSS, and jQuery.",
+          "pt": "Desenvolvi funcionalidades back-end com Ruby on Rails para o produto Fleeg, com testes automatizados em RSpec, além de suporte pontual em telas com HTML, CSS e jQuery."
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "key": "all",
+      "label": "All"
+    },
+    {
+      "key": "react",
+      "label": "React"
+    },
+    {
+      "key": "next",
+      "label": "Next.js"
+    },
+    {
+      "key": "typescript",
+      "label": "TypeScript"
+    },
+    {
+      "key": "angular",
+      "label": "Angular"
+    },
+    {
+      "key": "native",
+      "label": "React Native"
+    },
+    {
+      "key": "rails",
+      "label": "Rails"
+    },
+    {
+      "key": "dotnet",
+      "label": ".NET"
+    },
+    {
+      "key": "testing",
+      "label": "Testing"
+    },
+    {
+      "key": "ds",
+      "label": "Design Systems"
+    }
+  ]
+}

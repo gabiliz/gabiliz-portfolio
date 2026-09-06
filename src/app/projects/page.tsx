@@ -1,20 +1,54 @@
-import ProjectCard from "@/components/ProjectCard";
-import projects from "@utils/projects.json";
+'use client'
 
-export default function Projects() {
+import FilterChips from '@/components/FilterChips'
+import Grain from '@/components/Grain'
+import ProjectRow, { type Project } from '@/components/ProjectRow'
+import { useStackFilter } from '@/hooks/useStackFilter'
+import { useLang } from '@/i18n/LanguageProvider'
+import projectsData from '@/utils/projects.json'
+
+// newest first. Array.prototype.sort is stable, so projects sharing a year keep
+// the curated order they have in the JSON. The numbering below follows this list,
+// and `indexOf` reads from it unfiltered so a project keeps its number when the
+// filter narrows the page.
+const projects = [...(projectsData.projects as Project[])].sort(
+  (a, b) => Number.parseInt(b.year, 10) - Number.parseInt(a.year, 10),
+)
+
+export default function ProjectsPage() {
+  const { t } = useLang()
+  const { active, setActive, filtered, total } = useStackFilter(projects)
+
   return (
-    <div className="relative flex h-full flex-col px-4 pt-14 sm:px-6 lg:px-8">
-      <main className="flex-auto py-16">
-        <article className="prose dark:prose-invert">
-        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 dark:text-white">Projects</h1>
-          <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Relevant projects:</p>
-          <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-8 gap-x-8">
-            {projects.map((project, index) => (
-              <ProjectCard key={index} name={project.name} description={project.description} image={project.imgUrl} link={project.link} />
-            ))}
-          </div>
-        </article>
-      </main>
-    </div>
+    <main className="relative">
+      <Grain />
+
+      <div className="relative px-5 pb-6 pt-8 lg:px-11 lg:pb-6 lg:pt-12">
+        <h1 className="animate-fadeUp [animation-delay:.05s] font-display text-[48px] font-extrabold leading-[.94] tracking-[-.04em] lg:text-[72px]">
+          {t('sections.projects')}
+        </h1>
+        <p className="animate-fadeUp [animation-delay:.2s] mt-[18px] max-w-[620px] text-[15px] leading-[1.65] text-bone/80 lg:text-[16.5px]">
+          {t('projects.subtitle')}
+        </p>
+
+        <div className="mt-7 flex flex-wrap items-center justify-between gap-5">
+          <FilterChips
+            filters={projectsData.filters}
+            active={active}
+            onChange={setActive}
+            label={t('filter.label')}
+          />
+          <span className="font-mono text-[11px] uppercase leading-none tracking-widest text-bone/70">
+            {t('filter.projectCount', { count: filtered.length, total })}
+          </span>
+        </div>
+      </div>
+
+      <div className="relative flex flex-col gap-4 px-5 pb-5 perspective-[1600px] lg:px-11">
+        {filtered.map((project) => (
+          <ProjectRow key={project.id} project={project} index={projects.indexOf(project)} />
+        ))}
+      </div>
+    </main>
   )
 }

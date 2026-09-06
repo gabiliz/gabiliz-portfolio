@@ -1,44 +1,21 @@
-[
-  {
-    "title": "Postgraduate Degree in Tech Development 360",
-    "date": "2025 - 2026",
-    "institution": "Faculdade de Tecnologia Rocketseat",
-    "logo": "/assets/ftr.jpeg"
-  },
-  {
-    "title": "Bachelor of Software Engineering",
-    "date": "2020 - 2023",
-    "institution": "Centro Universitário Católica de Santa Catarina",
-    "logo": "/assets/catolicasc.jpg"
-  },
-  {
-    "title": "Testing React with Jest and React Testing Library (RTL)",
-    "date": "Nov 2022",
-    "institution": "Udemy",
-    "logo": "/assets/udemy.png"
-  },
-  {
-    "title": "Hackathon Inova Católica - 3rd place",
-    "date": "Dec 2020",
-    "institution": "Centro Universitário Católica de Santa Catarina",
-    "logo": "/assets/catolicasc.jpg"
-  },
-  {
-    "title": "Certificate of Achievement - B2",
-    "date": "Aug 2019",
-    "institution": "University of Michigan",
-    "logo": "/assets/universityofmichigan.jpg"
-  },
-  {
-    "title": "Cambridge Young Learners Flyers",
-    "date": "Dec 2014",
-    "institution": "University of Cambridge",
-    "logo": "/assets/universityofcambridge.jpg"
-  },
-  {
-    "title": "Cambridge Young Learners Starters",
-    "date": "Dec 2011",
-    "institution": "University of Cambridge",
-    "logo": "/assets/universityofcambridge.jpg"
-  }
-]
+{
+  "_note": "Substitui src/utils/education.json. A pós foi concluída — o site atual diz 'terminando em 2026'.",
+  "items": [
+    {
+      "en": "Postgrad, Tech Development 360 · FTR · completed 2026",
+      "pt": "Pós-graduação em Tech Development 360 · FTR · concluída em 2026"
+    },
+    {
+      "en": "BSc Software Engineering · Católica SC · 2020—2023",
+      "pt": "Bacharel em Engenharia de Software · Católica SC · 2020—2023"
+    },
+    {
+      "en": "3rd place, Hackathon Inova Católica · 2020",
+      "pt": "3º lugar, Hackathon Inova Católica · 2020"
+    },
+    {
+      "en": "English B2 (MET, Michigan) · Calvert Academy, American school",
+      "pt": "Inglês B2 (MET, Michigan) · Calvert Academy, escola americana"
+    }
+  ]
+}

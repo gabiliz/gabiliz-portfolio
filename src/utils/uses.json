@@ -1,0 +1,119 @@
+{
+  "_note": "Preenchido. USES_READY (src/utils/uses.ts) deriva daqui: sem nenhum pending, /uses entra no header, no sitemap e vira indexável.",
+  "groups": [
+    {
+      "id": "code",
+      "label": {
+        "en": "code",
+        "pt": "código"
+      },
+      "items": [
+        {
+          "key": "editor",
+          "label": {
+            "en": "editor",
+            "pt": "editor"
+          },
+          "value": {
+            "en": "Zed",
+            "pt": "Zed"
+          },
+          "pending": false
+        },
+        {
+          "key": "terminal",
+          "label": {
+            "en": "terminal",
+            "pt": "terminal"
+          },
+          "value": {
+            "en": "Warp + fish",
+            "pt": "Warp + fish"
+          },
+          "pending": false
+        },
+        {
+          "key": "font",
+          "label": {
+            "en": "font",
+            "pt": "fonte"
+          },
+          "value": {
+            "en": "JetBrains Mono",
+            "pt": "JetBrains Mono"
+          },
+          "pending": false
+        },
+        {
+          "key": "theme",
+          "label": {
+            "en": "theme",
+            "pt": "tema"
+          },
+          "value": {
+            "en": "One I put together myself.",
+            "pt": "Um que eu mesma montei."
+          },
+          "pending": false
+        }
+      ]
+    },
+    {
+      "id": "desk",
+      "label": {
+        "en": "desk",
+        "pt": "mesa"
+      },
+      "items": [
+        {
+          "key": "laptop",
+          "label": {
+            "en": "laptop",
+            "pt": "notebook"
+          },
+          "value": {
+            "en": "MacBook Pro M2 Pro",
+            "pt": "MacBook Pro M2 Pro"
+          },
+          "pending": false
+        },
+        {
+          "key": "keyboard",
+          "label": {
+            "en": "keyboard",
+            "pt": "teclado"
+          },
+          "value": {
+            "en": "NuPhy Air75 V2",
+            "pt": "NuPhy Air75 V2"
+          },
+          "pending": false
+        },
+        {
+          "key": "audio",
+          "label": {
+            "en": "audio",
+            "pt": "áudio"
+          },
+          "value": {
+            "en": "Sony WH-1000XM4",
+            "pt": "Sony WH-1000XM4"
+          },
+          "pending": false
+        },
+        {
+          "key": "mouse",
+          "label": {
+            "en": "mouse",
+            "pt": "mouse"
+          },
+          "value": {
+            "en": "Logitech MX Master 4",
+            "pt": "Logitech MX Master 4"
+          },
+          "pending": false
+        }
+      ]
+    }
+  ]
+}
