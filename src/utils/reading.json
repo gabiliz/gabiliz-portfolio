@@ -1,0 +1,69 @@
+{
+  "_note": "Estante mantida à mão. As notas são citações: inglês no original, português das edições brasileiras. Não traduzir por conta própria. finishedAt não vai para a tela, só ordena.",
+  "books": [
+    {
+      "id": "blood-over-bright-haven",
+      "title": "Blood Over Bright Haven",
+      "author": "M. L. Wang",
+      "status": "reading",
+      "rating": null,
+      "page": null,
+      "pages": null,
+      "startedAt": null,
+      "finishedAt": null,
+      "pending": false,
+      "note": {
+        "en": "",
+        "pt": ""
+      }
+    },
+    {
+      "id": "blade-runner",
+      "title": "Blade Runner",
+      "author": "Philip K. Dick",
+      "status": "finished",
+      "rating": null,
+      "page": null,
+      "pages": null,
+      "startedAt": null,
+      "finishedAt": "2026-06-30",
+      "pending": false,
+      "note": {
+        "en": "“Empathy, evidently, existed only within the human community.”",
+        "pt": "“A empatia, evidentemente, só existia dentro da comunidade humana.”"
+      }
+    },
+    {
+      "id": "babel",
+      "title": "Babel",
+      "author": "R. F. Kuang",
+      "status": "finished",
+      "rating": null,
+      "page": null,
+      "pages": null,
+      "startedAt": null,
+      "finishedAt": "2026-04-18",
+      "pending": false,
+      "note": {
+        "en": "“Translation means doing violence upon the original.”",
+        "pt": "“A tradução significa exercer violência sobre o original.”"
+      }
+    },
+    {
+      "id": "the-man-in-the-high-castle",
+      "title": "The Man in the High Castle",
+      "author": "Philip K. Dick",
+      "status": "abandoned",
+      "rating": null,
+      "page": null,
+      "pages": null,
+      "startedAt": null,
+      "finishedAt": null,
+      "pending": false,
+      "note": {
+        "en": "“Perhaps if you know you are insane then you are not insane.”",
+        "pt": "“Talvez, se você sabe que está louco, você não esteja louco.”"
+      }
+    }
+  ]
+}

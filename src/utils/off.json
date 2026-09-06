@@ -1,0 +1,73 @@
+{
+  "_note": "art aceita: barbell | paws | steam | bars | slot.",
+  "cards": [
+    {
+      "id": "gym",
+      "art": "barbell",
+      "pending": false,
+      "cadence": {
+        "en": "every day",
+        "pt": "todo dia"
+      },
+      "title": {
+        "en": "The gym",
+        "pt": "Academia"
+      },
+      "text": {
+        "en": "Every day, even when I really don't feel like going.",
+        "pt": "Todo dia, mesmo quando bate a preguiça."
+      }
+    },
+    {
+      "id": "masterchef",
+      "art": "steam",
+      "pending": false,
+      "cadence": {
+        "en": "weekly",
+        "pt": "toda semana"
+      },
+      "title": {
+        "en": "Masterchef with my mom",
+        "pt": "Masterchef com a minha mãe"
+      },
+      "text": {
+        "en": "We keep score. She is usually right about the seasoning.",
+        "pt": "A gente dá nota. Ela geralmente está certa sobre o tempero."
+      }
+    },
+    {
+      "id": "gaming",
+      "art": "bars",
+      "pending": false,
+      "cadence": {
+        "en": "lately",
+        "pt": "ultimamente"
+      },
+      "title": {
+        "en": "Final Fantasy VII Rebirth",
+        "pt": "Final Fantasy VII Rebirth"
+      },
+      "text": {
+        "en": "Where I switch off after work.",
+        "pt": "É onde eu desligo depois do trabalho."
+      }
+    },
+    {
+      "id": "next",
+      "art": "slot",
+      "pending": false,
+      "cadence": {
+        "en": "someday",
+        "pt": "algum dia"
+      },
+      "title": {
+        "en": "A third language",
+        "pt": "Um terceiro idioma"
+      },
+      "text": {
+        "en": "I have Portuguese and English. Still deciding which one comes next.",
+        "pt": "Já tenho português e inglês. Ainda não decidi qual vem depois."
+      }
+    }
+  ]
+}
